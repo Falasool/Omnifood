@@ -157,12 +157,12 @@ Instead, 1rem = 1em = 16px */
     transform: translateX(0);
   }
 
-  .icon-mobile-nav[name='close-outline'] {
-    display: none;
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
   }
 
-  .icon-mobile-nav[name='menu-outline'] {
-    display: block;
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
   }
 
   .main-nav-list {

@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <!-- 引入字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +19,19 @@
     <link rel="stylesheet" href="./css/queries.css" />
     
 
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
     <!-- use AI to create and deliver custom healthy meal plans. -->
   </head>
   <body>
-    <header class="header nav-open">
-        <img class="logo" src="./img/omnifood-logo.png" alt="Omnifood logo">
+    <header class="header">
+      <a href="#"><img class="logo" src="./img/omnifood-logo.png" alt="Omnifood logo"></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#"> Meals </a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals"> Meals </a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -48,8 +53,8 @@
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more ↓</a>
+          <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how" class="btn btn--outline">Learn more ↓</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="./img/customers/customer-1.jpg" alt="Customer photo">
@@ -84,7 +89,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="cocntainer">
          <span class="subheading">How it works</span>
         <h2 class="heading-secondary">
@@ -127,7 +132,7 @@
       </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes
@@ -192,7 +197,7 @@
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
         <h2 class="heading-secondary">
@@ -273,7 +278,7 @@
     </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
 
       <div class="container">
         <span class="subheading">Pricing</span>
@@ -371,7 +376,7 @@
       </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -507,6 +512,8 @@
   <!-- 引入ionicon -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- 引入smoothscroll -->
+  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <!-- 引入js -->
   <script src="./js/script.js"></script>
 </html>
